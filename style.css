@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+:root{
+    --color-light-red: hsl(0, 100%, 67%);/*....primary colors*/
+    --color-orangey-yellow: hsl(39, 100%, 56%);/*....primary colors*/
+    --color-green-teal: hsl(166, 100%, 37%);/*....primary colors*/
+    --color-cobalt-blue: hsl(234, 85%, 45%);/*....primary colors*/
+
+    --color-light-slate-blue: hsl(252, 100%, 67%);/*...(background)     garadients*/
+    --color-light-royal-blue: hsl(241, 81%, 54%);/*...(background)     garadients*/
+    --color-violet-blue: hsla(256, 72%, 46%, 1);/* (circle)     garadients*/
+    --color-persian-blue: hsla(241, 72%, 46%, 0);/* (circle)     garadients*/
+
+    --color-white: hsl(0, 0%, 100%);/*........neutral   colors*/
+    --color-pale-blue: hsl(221, 100%, 96%);/*........neutral   colors*/
+    --color-light-lavender: hsl(241, 100%, 89%);/*........neutral   colors*/
+    --color-dark-gray-blue: hsl(224, 30%, 27%);/*........neutral   colors*/
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Hanken Grotesk' sans-serif;
+    background-color: var(--color-pale-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+}
+.fbox{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: var(--color-white);
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.fbox h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 1px 78px 10px hsl(241, 81%, 54%);
+    margin-bottom: 2rem;
+}
+p.three{
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+.one{
+    font-weight: bold ;
+}
+.two,
+.three,
+.four{
+    font-weight: bold ;
+    text-align: center;
+}
+.lbox{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-white);
+    border-radius: 2rem;
+}
+.lbox h3{
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+}
+.box,
+.box-one,
+.box-two,
+.box-three,
+.box-four{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.box-one{
+    background-color: hsla(0, 100%, 67%, 0.2);  
+    padding: 1rem 0.5rem;
+    justify-content: space-between; 
+}
+.box-two{
+    padding: 1rem 0.5rem;
+    justify-content: space-between;
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+.box-three{
+    padding: 1rem 0.5rem;
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+.box-four{
+    padding: 1rem 0.5rem;
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+.box-one .name{
+    color: var(--color-light-red);
+}
+.box-two .name{
+    color: var(--color-orangey-yellow);
+}
+.box-three .name{
+    color: var(--color-green-teal);
+}
+.box-four .name{
+    color: var(--color-cobalt-blue);
+}
+.num span{
+    font-weight: bold;
+}
+
+.btn{
+    width: 100%;
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background: var(--Dark-gray-blue);
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+}
+.btn:hover {
+    background-color: var(--color-white);
+    color: black;
+  }
