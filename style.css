@@ -153,3 +153,23 @@ p.three{
     background-color: var(--color-white);
     color: black;
   }
+
+  @media screen and (max-width: 650px) {
+    body {
+      align-items: flex-start;
+      background-color: white;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .fbox {
+      border-radius: 0 0 1rem 1rem;
+      width: 100%;
+    }
+    .result .four {
+      width: 250px;
+    }
+    .lbox {
+      width: 100%;
+    }
+  }
